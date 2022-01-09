@@ -3,8 +3,10 @@
 
 body{
     text-align: center;
-    background: url("../pics/background2_error-503.png") fixed;
+    background: url("../pics/background_error-503.png") fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .card{
  
@@ -17,6 +19,12 @@ body{
 .card p{
     font-family: 'Space Mono', monospace;
     font-size: 0.7rem;
+}
+.card img{
+    display: block;
+    max-width: 55%;
+    padding-top: 15px;
+    margin: auto;
 }
 h5{
     font-family: 'Space Mono', monospace;
