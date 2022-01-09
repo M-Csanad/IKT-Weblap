@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono&display=swap');
+
+body{
+    text-align: center;
+    background: url("../pics/background2_error-503.png") fixed;
+    background-size: cover;
+}
+.card{
+ 
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,.7);
+}
+.card h1, h3{
+    font-family: 'Bebas Neue', cursive;
+}
+.card p{
+    font-family: 'Space Mono', monospace;
+    font-size: 0.7rem;
+}
+h5{
+    font-family: 'Space Mono', monospace;
+}
