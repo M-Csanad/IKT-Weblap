@@ -338,7 +338,6 @@ input[type='checkbox'] {
 	background-color: #e2be00;
 	color: #fff;
 	font: 700 0.75rem/1.75rem "Montserrat", sans-serif;
-	cursor: pointer;
 	transition: all 0.2s;
 }
 
@@ -551,8 +550,8 @@ input[type='checkbox'] {
 }
 
 .navbar-custom .navbar-brand.logo-image img {
-    width: 7.0625rem;
-	height: 2rem;
+    width: 2em;
+	height: 2em;
 	backface-visibility: hidden;
 }
 
@@ -1065,7 +1064,6 @@ input[type='checkbox'] {
 	font: 700 1rem/2.125rem "Montserrat", sans-serif;
 	text-align: center;
 	vertical-align: middle;
-	cursor: pointer;
 	transition: all 0.2s ease;
 }
 
@@ -1088,7 +1086,7 @@ input[type='checkbox'] {
 	color: #e1e1e1;
 	font: 700 1.25rem/1.75rem "Montserrat", sans-serif;
 	vertical-align: middle;
-	cursor: pointer;
+	
 	transition: all 0.2s ease;
 }
 
@@ -1140,7 +1138,6 @@ input[type='checkbox'] {
 	background-color: #f1f4f7;
 	color: #7b7e85;
 	font: 700 0.75rem/1.25rem "Montserrat", sans-serif;
-	cursor: pointer;
 	transition: all 0.2s ease;
 }
 
@@ -1294,7 +1291,7 @@ footer::after{
 
 footer {
 	padding-top: 5rem;
-	background-color: #10212b;
+	background-color: #1d1d1d;
 }
 
 footer .text-container {
@@ -1319,7 +1316,7 @@ footer ul {
 .copyright {
 	padding-top: 1rem;
 	padding-bottom: 0.5rem;
-	background-color: #10212b;
+	background-color: #1d1d1d;
 	text-align: center;
 }
 
