@@ -43,7 +43,14 @@
                 <a href="#intro" class="ex-hover page-scroll">BEVEZETŐ</a>
                 <a href="#services" class="ex-hover page-scroll">SZOLGÁLTATÁSOK</a>
                 <a href="#callMe" class="ex-hover page-scroll">KONTAKT</a>
-                <a href="#projects" class="ex-hover page-scroll">PROJEKTEK</a>
+                <div class="dropdown">
+                    <a><button class="dropbtn">PROJEKTEK</button></a>
+                    <div class="dropdown-content">
+                        <a href="#anna" class="ex-hover page-scroll">ANNA</a>
+                        <a href="#csanad" class="ex-hover page-scroll">CSANÁD</a>
+                        <a href="#martin" class="ex-hover page-scroll">MARTIN</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -171,7 +178,7 @@
                 <div class="col-lg-12">
                     
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card" id="anna">
                         <div class="card-image">
                             <img class="img-fluid" src="images/services-1.jpg" alt="alternative">
                         </div>
@@ -197,7 +204,7 @@
                     <!-- end of card -->
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card" id="csanad">
                         <div class="card-image">
                             <img class="img-fluid" src="images/services-2.jpg" alt="alternative">
                         </div>
@@ -223,7 +230,7 @@
                     <!-- end of card -->
 
                     <!-- Card -->
-                    <div class="card">
+                    <div class="card" id="martin">
                         <div class="card-image">
                             <img class="img-fluid" src="images/services-3.jpg" alt="alternative">
                         </div>
@@ -265,14 +272,6 @@
             </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- Filter -->
-                    <div class="button-group filters-button-group">
-                        <a class="button is-checked" data-filter="*"><span>SHOW ALL</span></a>
-                        <a class="button" data-filter=".design"><span>DESIGN</span></a>
-                        <a class="button" data-filter=".development"><span>DEVELOPMENT</span></a>
-                        <a class="button" data-filter=".marketing"><span>MARKETING</span></a>
-                        <a class="button" data-filter=".seo"><span>SEO</span></a>
-                    </div> <!-- end of button group -->
                     <div class="grid">
                         <div class="element-item development">
                             <a class="popup-with-move-anim" href="#project-1"><div class="element-item-overlay"><span>Online Banking</span></div><img src="images/project-1.jpg" alt="alternative"></a>
