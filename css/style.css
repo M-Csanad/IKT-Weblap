@@ -333,3 +333,30 @@ selection{
   .dropdown:hover .dropdown-content {
 	display: block;
   }
+
+  /* FEATURES */
+
+.features {
+	background: #1b1b1b;
+	color: #b1b1b1;
+	padding: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+  }
+  
+  .features figure {
+	margin: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	max-width: 22.5em;
+	height: auto;
+  }
+  
+  .features figure img {
+	border: 1px solid white;
+	border-radius: 0.25rem;
+	box-shadow: gray 0 0 10px;
+	max-width: 22.5em;
+	height: auto;	
+  }

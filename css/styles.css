@@ -1752,7 +1752,6 @@ footer ul {
 	/* Projects */
 	.filter .element-item {
 		width: 17.3125rem; /* to eliminate grid overflow problem on hard refresh */
-		height: 16.875rem;
 	}
 
 	.filter .element-item .element-item-overlay span { 
@@ -1801,4 +1800,3 @@ footer ul {
 	}
 	/* end of navigation */
 }
-/* end of min-width width 1200px */
