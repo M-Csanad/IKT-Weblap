@@ -1,3 +1,11 @@
 slide1-Webdesigner feladata-Csanád által megírt szöveg
 slide2-Tervezés menete: Egyeztetés az ügyféllel:látványterv létrehozása és annak elfogadtatása,véglegesítése;projekt ütemezése.
 slide3-Weblap létrehozása: A megbízás teljesítése a megadott határidőn belül,a megbízó folyamatos tájékoztatása és esetleges észrevételeinek figyelembevétele.
+
+card1-
+card2-
+card3-
+
+Few Words About WebdesignAlapfokon: Ez az oldal tanító célzattal jött létre. Célja,hogy minél több segítséget nyújtson weboldal tervezés és létrehozás területén
+
+Linkek Segédlet Eszközök
