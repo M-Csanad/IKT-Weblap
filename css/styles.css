@@ -1149,7 +1149,6 @@ input[type='checkbox'] {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	width: 50%;
 	background-color: #000; /* to hide 1px white margin in IE */
 }
 
@@ -1374,6 +1373,7 @@ footer ul {
 		max-width: 17.5rem;
 		text-align: left;
 		vertical-align: top;
+		justify-content: center;
 	}
 	
 	.cards-1 div.card:nth-child(3n+2) {
