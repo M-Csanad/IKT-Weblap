@@ -1377,8 +1377,8 @@ footer ul {
 	}
 	
 	.cards-1 div.card:nth-child(3n+2) {
-		margin-right: 2.5rem;
-		margin-left: 2.5rem;
+		margin-right: 0.625rem;
+		margin-left: 0.625rem;
 	}
 	/* end of description */
 
