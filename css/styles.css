@@ -799,7 +799,7 @@ input[type='checkbox'] {
 
 
 /*********************/
-/*     Header     */
+/*     Header        */
 /*********************/
 .header {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), center center no-repeat;
@@ -933,7 +933,7 @@ input[type='checkbox'] {
 
 
 /************************/
-/*     07. Szolgáltatás    */
+/*  07. Szolgáltatás    */
 /************************/
 .cards-2 {
 	padding-top: 6.625rem;	
@@ -1327,8 +1327,6 @@ footer ul {
 	}
 	/* end of general styles */
 
-
-
 	/* Projects */
 	.filter .element-item { 
 		width: 25%; 
@@ -1589,4 +1587,8 @@ footer ul {
 	
 
 	/* end of navigation */
+}
+
+.wrapper{
+	background-color: #1b1b1b;
 }
