@@ -112,7 +112,8 @@ header .brand{
   }
   
   .features figure {
-	margin: 10px;
+	margin: 0.625rem;
+	display: inline-block;
 	text-align: center;
 	text-transform: uppercase;
 	max-width: 22.5em;

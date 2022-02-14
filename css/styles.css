@@ -799,7 +799,7 @@ input[type='checkbox'] {
 
 
 /*********************/
-/*     Header     */
+/*     Header        */
 /*********************/
 .header {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), center center no-repeat;
@@ -933,7 +933,7 @@ input[type='checkbox'] {
 
 
 /************************/
-/*     07. Szolgáltatás    */
+/*  07. Szolgáltatás    */
 /************************/
 .cards-2 {
 	padding-top: 6.625rem;	
@@ -1316,40 +1316,12 @@ footer ul {
 /*****************************/
 /*     21. Media Queries     */
 /*****************************/	
-/* Min-width width 768px */
-@media (min-width: 768px) {
+
+
+/* Min-width width 1200px */
+@media (min-width: 1200px) {
 	
-	/* General Styles */
-	.p-heading {
-		width: 85%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of general styles */
 
-
-
-	/* Projects */
-	.filter .element-item { 
-		width: 25%; 
-	}
-	
-	.filter .element-item .element-item-overlay { 
-		opacity: 0;
-		transition: opacity 0.3s ease;
-	}
-
-	.filter .element-item:hover .element-item-overlay {
-		opacity: 1;
-	}
-	/* end of projects */
-}
-/* end of min-width width 768px */
-
-
-/* Min-width width 992px */
-@media (min-width: 992px) {
-	
 	/* General Styles */
 	.p-heading {
 		width: 65%;
@@ -1366,96 +1338,6 @@ footer ul {
 	}
 	/* end of intro */
 
-
-	/* Description */
-	.cards-1 .card {
-		display: inline-block;
-		max-width: 17.5rem;
-		text-align: left;
-		vertical-align: top;
-		justify-content: center;
-	}
-	
-	.cards-1 div.card:nth-child(3n+2) {
-		margin-right: 2.5rem;
-		margin-left: 2.5rem;
-	}
-	/* end of description */
-
-
-	/* Services */
-	.cards-2 .card {
-		max-width: 18.25rem;
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.cards-2 .col-lg-12 div.card:nth-child(3n+2) {
-		margin-right: 1.25rem;
-		margin-left: 1.25rem;
-	}
-	/* end of services */
-
-
-	/* Details 1 */
-	.accordion {
-		height: 34.625rem;
-	}
-	
-	.accordion .area-1 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-	}
-	
-	.accordion .area-2 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-		vertical-align: top;
-	}
-	
-	.accordion .accordion-container {
-		max-width: 88%;
-		margin-left: 2rem;
-		padding-bottom: 0;
-	}
-
-	.accordion .accordion-title {
-		width: 85%;
-	}
-	/* end of details 1 */
-
-
-	/* Details 2 */
-	.tabs {
-		height: 36.125rem;
-	}
-
-	.tabs .area-1 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.tabs .area-2 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-	}
-
-	.tabs .tabs-container {
-		max-width: 88%;
-		margin-left: 2rem;
-		padding-top: 6.75rem;
-		padding-bottom: 0;
-	}
-
-	.tabs .nav-tabs {
-		justify-content: flex-start;
-	}
-	/* end of details 2 */
 
 	/* Project Lightboxes */
 	.lightbox-basic img {
@@ -1481,10 +1363,6 @@ footer ul {
 }
 /* end of min-width width 992px */
 
-
-/* Min-width width 1200px */
-@media (min-width: 1200px) {
-	
 	/* General Styles */
 	.p-heading {
 		width: 55%;
@@ -1498,59 +1376,31 @@ footer ul {
 		margin-right: 3rem;
 	}
 	/* end of intro */
-
-
+	
 	/* Description */
-	.cards-1 .card {
-		max-width: 21rem;
+	.cards-1 {
+		padding: 20px; 
+		justify-content: center;
+		display: flex;
 	}
 
+	.cards-1 .card {
+		display: inline-block;
+		max-width: 17.5rem;
+		text-align: left;
+		vertical-align: top;
+
+	}
+	
 	.cards-1 div.card:nth-child(3n+2) {
-		margin-right: 2.875rem;
-		margin-left: 2.875rem;
+		margin-right: 0.625rem;
+		margin-left: 0.625rem;
 	}
 	/* end of description */
 
-
-	/* Services */
-	.cards-2 .card {
-		max-width: 20.875rem;
-	}
-
-	.cards-2 .card-body {
-		padding: 2.25rem 2.5rem 2.125rem 2.5rem;
-	}
-
-	.cards-2 .col-lg-12 div.card:nth-child(3n+2) {
-		margin-right: 3rem;
-		margin-left: 3rem;
-	}
-	/* end of services */
-
-
-	/* Details 1 */
-	.accordion .accordion-container {
-		max-width: 28rem;
-		margin-left: 5rem;
-	}
-	/* end of details 1 */
-
-
-	/* Details 2 */
-	.tabs .tabs-container {
-		max-width: 28rem;
-		margin-right: 5rem;
-		margin-left: auto;
-	}
-
-	.tabs #tab-2 .media-wrapper.first {
-		margin-right: 2rem;
-	}
-	/* end of details 2 */
-
 	/* Projects */
 	.filter .element-item {
-		width: 17.3125rem; /* to eliminate grid overflow problem on hard refresh */
+		max-width: 17.3125rem; /* to eliminate grid overflow problem on hard refresh */
 	}
 
 	.filter .element-item .element-item-overlay span { 
@@ -1580,13 +1430,5 @@ footer ul {
 		margin-right: 5rem;
 	}
 	/* end of footer */
-}
+
 /* end of min-width width 1200px */
-
-
-/* Min-width width 1600px */
-@media (min-width: 1600px) {
-	
-
-	/* end of navigation */
-}
