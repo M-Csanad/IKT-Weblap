@@ -20,6 +20,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
         rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
@@ -76,8 +77,8 @@
         </div>
         <div class="content">
 			<h1>Tervezés<br><span>Weboldal születik</span></h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-			<a href="index_csanad.html">Olvass Tovább</a>
+			<p>Érdekel hogy kell nekikezdeni egy weboldalnak? Vannak ötleteid, de nem tudod, hogy fogj hozzá? Látogass el hozzám!</p>
+			<a href="site02-index.html">Olvass Tovább</a>
 		</div>
         <div class="content">
             <h1>Cím3<br><span>valami3</span></h1>
@@ -150,7 +151,7 @@
                     <div class="card" style="background: #141414">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
-                            <i class="fas fa-binoculars fa-stack-1x"></i>
+                            <i class="fas fa-check fa-stack-1x"></i>
                         </span>
                         <div class="card-body">
                             <h4 class="card-title">Lorem ipsum</h4>
@@ -165,13 +166,11 @@
                     <div class="card" style="background: #141414">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
-                            <i class="fas fa-list-alt fa-stack-1x"></i>
+                            <i class="fas fa-paint-brush fa-stack-1x"></i>
                         </span>
                         <div class="card-body">
-                            <h4 class="card-title">Lorem ipsum</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at molestie enim, eget
-                                euismod quam. Vestibulum imperdiet turpis ac fermentum congue. Vivamus auctor gravida
-                                malesuada.</p>
+                            <h4 class="card-title">A tervező</h4>
+                            <p>Üdvözöllek! Az én nevem Milkovics Csanád. <br> Webdesigner, grafikai tervező és alapszintű 3D Sculpterként mutatom be Neked, dizájnerként, hogy valósítsd meg gondolataidat, milyen folyamatok sorozatával készíts el egy weboldalt és természetesen bemutatom a kezdeti hibákat is, melyek elkerülendőek a szakmában.</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -180,7 +179,7 @@
                     <div class="card" style="background: #141414">
                         <span class="fa-stack">
                             <span class="hexagon"></span>
-                            <i class="fas fa-chart-pie fa-stack-1x"></i>
+                            <i class="fas fa-code fa-stack-1x"></i>
                         </span>
                         <div class="card-body">
                             <h4 class="card-title">Lorem Ipsum</h4>
@@ -266,55 +265,13 @@
         </div>
     </div>
 
+    <!--Scroll to the top-->
+
+    <div class="top-button">
+        <a href="#" class="back-to-top page-scroll"><i class="icon-chevron-up"></i></a>
+    </div>
+
     <!-- Scripts -->
-    <script type="text/javascript">
-        //Javascript -- responsive navigation menu
-        const primaryNav = document.querySelector(".primary-navigation");
-        const navToggle = document.querySelector(".menu-btn");
-
-        navToggle.addEventListener("click", () => {
-            const visibility = primaryNav.getAttribute('data-visible');
-
-            if (visibility === "false") {
-                primaryNav.setAttribute("data-visible", true)
-                navToggle.setAttribute("aria-expanded", true)
-            }
-            else if (visibility === "true") {
-                primaryNav.setAttribute("data-visible", false)
-                navToggle.setAttribute("aria-expanded", false)
-            }
-        })
-
-
-        //Javascript -- video slider
-        const btns = document.querySelectorAll(".nav-btn");
-        const slides = document.querySelectorAll(".video-slider");
-        const contents = document.querySelectorAll(".content");
-
-        var sliderNav = function (manual) {
-            btns.forEach((btn) => {
-                btn.classList.remove("active");
-            });
-
-            slides.forEach((slide) => {
-                slide.classList.remove("active");
-            });
-
-            contents.forEach((text) => {
-                text.classList.remove("active");
-            });
-
-            btns[manual].classList.add("active");
-            slides[manual].classList.add("active");
-            contents[manual].classList.add("active");
-        }
-        btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-                sliderNav(i)
-            });
-        });
-
-    </script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
