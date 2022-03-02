@@ -40,9 +40,9 @@
     var amountScrolled = 100;
     $(window).scroll(function() {
         if ($(window).scrollTop() > amountScrolled) {
-            $('a.back-to-top').fadeIn('500');
+            $('a.back-to-top').fadeIn('200');
         } else {
-            $('a.back-to-top').fadeOut('500');
+            $('a.back-to-top').fadeOut('200');
         }
     });
 
