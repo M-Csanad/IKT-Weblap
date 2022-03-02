@@ -34,6 +34,15 @@
 		}
     });
 
+    /* Search */
+    
+    const search = document.querySelector('.search');
+    const search_icon = document.querySelector('.search_icon');
+        search_icon.onclick = function(){
+            search.classList.toggle('active')
+
+        }
+
     /* Back To Top Button */
     // create the back to top button
     $('body').prepend('<a href="#" class="back-to-top page-scroll"></a>');
