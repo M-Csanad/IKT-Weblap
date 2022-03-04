@@ -1,12 +1,514 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Standard webdesing landing page">
+    <meta name="author" content="IKT-team">
+
+    <!-- Website Title -->
+    <title>Webdesigner feladata</title>
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/header-style.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico">
 </head>
-<body>
-    
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <div class="UserCursor"></div>
+
+    <!-- Header -->
+    <header id="header">
+
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
+        <a href="#" class="brand">WebdesignAlapfokon</a>
+        <div class="menu-btn navbar fixed-top" aria-controls="primary-navigation" aria-expanded="false"></div>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html"><span aria-hidden="true">00</span>KEZDŐLAP</a>
+                </li>
+                <li>
+                    <a href="#intro" class="ex-hover page-scroll"><span aria-hidden="true">01</span>BEVEZETŐ</a>
+                </li>
+                <li>
+                    <a href="#services" class="ex-hover page-scroll"><span
+                            aria-hidden="true">02</span>SZOLGÁLTATÁSOK</a>
+                </li>
+                <li>
+                    <a href="#projects" class="ex-hover page-scroll"><span aria-hidden="true">03</span>PROJEKTEK</a>
+                </li>
+                <li>
+                    <a href="#callMe" class="ex-hover page-scroll"><span aria-hidden="true">04</span>KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider & Home -->
+    <selection class="home">
+        <video class="video-slider active" src="images/slider-vid01.mp4" autoplay loop muted></video>
+        <video class="video-slider" src="images/slider-vid02.mp4" autoplay loop muted></video>
+        <video class="video-slider" src="images/slider-vid03.mp4" autoplay loop muted></video>
+        <div class="content active">
+            <h1>Webdesigner<br><span>feladata</span></h1>
+            <p>A webdesigner tervezi meg az oldal szerkezeti felépítését, arculatát, meghatározza mi, hol és hogyan
+                helyezkedjen el. Egy jó webdesigner minden területhez ért és átlátja az egyes folyamatokat</p>
+            <a href="site01-index.html">Olvass Tovább</a>
+        </div>
+        <div class="content">
+            <h1>Cím2<br><span>valami2</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <a href="site02-index.html">Olvass Tovább</a>
+        </div>
+        <div class="content">
+            <h1>Cím3<br><span>valami3</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <a href="site03-index.html">Olvass Tovább</a>
+        </div>
+        <span class="social-icons">
+            <a class="fa-stack">
+                <a href="https://github.com/M-Csanad/IKT-Weblap">
+                    <i class="fab fa-brands fa-github fa-stack-1x"></i>
+                </a>
+            </a>
+        </span>
+        <div class="slider-navigate">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </selection>
+
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="content">
+                    <h1>H1-es cím</h1>
+                </div>
+                <div class="content">
+                    <h2>Projektvezető</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Lényeglátó képesség</li>
+                        <li>Projekt tapasztalat</li>
+                        <li>Stressztűrő képesség</li>
+                        <li>Pénzügyi ismeretek</li>
+                        <li>Ügyfél kommunikáció</li>
+                        <li>Konfliktuskezelés</li>
+                        <li>Csapat koordinációs és vezetői képesség</li>
+                    </ul>
+                    <p>Meghatározza a projekt szerződéses feltételeit (pontosan mit foglal magában a munka,
+                        mennyi a vállalási ár, milyen rész- és végső határidőket kell betartani, milyen a fizetés
+                        ütemezése). A számlákat intézi az ügyfelekkel. Gyakran ő határozza meg a projekten belüli
+                        munkastílust
+                        és ő válogatja a résztvevő munkatársakat.</p>
+                    <p>Egy projektvezetőnek sok stresszes feladata van. Mivel igyekszik betartani a szerződésben
+                        foglaltakat, minden résztvevő felé fel kell vállalnia a konfliktusokat. Össze kell hangolni a
+                        projekten belül dolgozókat, hogy mindenki elkészüljön határidőre a saját feladatával,
+                        mérlegelnie kell a plusz dolgokat, hogy bevállalható-e és belefér-e a költségvetésbe.</p>
+                    <p>Emiatt fontos, hogy egy ember tartsa az ügyféllel a kapcsolatot, akinek jó a
+                        kommunikációs készsége, kedves, tudja kezelni a konfliktusokat a folyamatos változtatások
+                        egyeztetése során.</p>
+                    <p> Az igény felmérése során kerül egyeztetésre a költségvetés is. Gyakori, hogy a honlap
+                        bevezetésekor prezentációt vagy oktatást kell
+                        tartani az átnyújtott dokumentáció mellé. Kisebb projektek estében általában ő szokta
+                        levezetni a bemutatókat és az oktatásokat.</p>
+                </div>
+                <div class="content">
+                    <h2>Rendszerszervező, rendszertervező</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Informatikai ismeretek</li>
+                        <li>Informatikai rendszerek fejlesztésében, tervezésében való jártasság</li>
+                        <li>Honlapkészítési tapasztalat</li>
+                        <li>Rendszerszemlélet</li>
+                    </ul>
+                    <p>A teljes informatikai rendszer tervezését végzi. Meghatározza és formálisan ledokumentálja,
+                        milyen működési funkciókat fog a portál ellátni. Megtervezi a használat során felmerülő
+                        szerepköröket és a folyamatokat. Elsősorban a működésre koncentrál. Lesz-e a honlapon webshop,
+                        fórum, blog, ki fogja felvinni az adatokat, szükséges-e jogosultsági rendszer a honlap
+                        kezeléséhez. Az is nagyon összetett kérdés, hogy az ügyfél igények ismeretében milyen
+                        technológiát válasszunk a honlap megvalósításához. Ez ugyanis befolyásolja az árat, de a
+                        résztvevő szakemberek listáját is. Talán a rendszertervező tudja a legpontosabban megítélni,
+                        hogy szükség van-e egyedi fejlesztésre vagy az ismert content managment rendszerek
+                        alkalmazása elegendő.</p>
+                    <p>Olyankor is nagy szükség lehet rá, ha vannak más portálok, vagy más technológiákkal készült
+                        informatikai rendszerek, amelyekhez kapcsolódni kell.</p>
+                    <p>A rendszertervek a projekt elején készülnek, és csak nagyon különleges indokkal változhatnak
+                        menet közben. Minél egyszerűbb a honlap, minél inkább a standard működési elemek jelennek meg
+                        rajta, annál egyszerűbb a rendszerterv, illetve annál jobban hasonlít a működési funkciók
+                        felsorolására.</p>
+                </div>
+                <div class="content">
+                    <h2>UX designer (felhasználói élmény)</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Informatikai ismeretek</li>
+                        <li>Informatikai rendszerek fejlesztésében, tervezésében való jártasság</li>
+                        <li>Honlapkészítési tapasztalat</li>
+                        <li>Rendszerszemlélet</li>
+                    </ul>
+                    <p>Ritkák az olyan nagyságrendű projektek, ahol külön UX szakértőt vonnak be a tervezési és
+                        fejlesztési folyamatba. Sokszor a webdesigner-nél halmozódik fel az a tapasztalat, az a
+                        szemlélet, ami a felhasználói élmény tudatos tervezéséhez nélkülözhetetlen. Elvileg a
+                        rendszertervező is beépíthetné a UX szempontokat az elképzeléseibe, azonban a felhasználói
+                        élmény nem elsősorban informatikai kérdés. Ismerni kell a marketing, a verbális és vizuális
+                        kommunikáció világát is és jó, ha otthonosan mozgunk a vállalkozások, a versenyszféra és a
+                        terméktámogatás területén is.
+
+                        A UX designer-nek szorosan együtt kell dolgoznia a rendszertervezővel és a webdesigner-rel, mert
+                        nem csak a site működésével, a nyújtott szolgáltatásokkal, hanem a képernyőképek felépítésével,
+                        a vizuális kommunikációval és az online marketinggel kapcsolatban is lehetnek elvárásai,
+                        észrevételei.
+
+                        Olyan szempontból is különlegesek a feladati, hogy a teljes folyamat során alkalmaznia kell ezt
+                        a felhasználói élmény szemléletet. A termék hirdetésétől kezdve, a szolgáltatás reklamációk
+                        kezeléséig. Akár a márkanevekhez is fűzhet javaslatokat, vagy az üzleti folyamatokban is
+                        rámutathat gyenge pontokra. Készülhet dokumentáció a felhasználói élmény biztosítására szolgáló
+                        ismeretekről, az alkalmazott elvekről, szabályokról, de fontosabb, hogy menet közben, a
+                        fejlesztés során folyamatos párbeszéddel legyen jelen a UX szakértő.</p>
+                </div>
+                <div class="content">
+                    <h2>Webfejlesztő</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Jó matematikai és problémamegoldó képesség</li>
+                        <li>Magas teherbírási képesség</li>
+                        <li>Szakértelem</li>
+                        <li>Csapatmunkában való jártasság</li>
+                    </ul>
+                    <p>Egyedi fejlesztésnél a kódolás feladatát végzi. Talán ez a terület a legnehezebben
+                        elsajátítható autodidakta módszerekkel, de a mai internetes eszközökkel és kurzusokkal ez is
+                        lehetséges. Mindenképpen védett környezetben, egy hosszabb tanulási és gyakorlati folyamat végén
+                        vállalj ügyfeleknek fejlesztési feladatokat, mert nagy
+                        károkat lehet okozni.</p>
+                </div>
+                <div class="content">
+                    <h2>Adatbázis szakértő</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Szaktudás</li>
+                        <li>Honlapkészítési tapasztalat</li>
+                    </ul>
+                    <p>Egészen bonyolult esetekben még arra is szükség lehet, hogy a portált kiszolgáló adatbázis
+                        tervezéséhez külön szakértelemre legyen szükség. Egy átlagos, egyedi fejlesztésű honlap esetén
+                        ezzel a tudással a programozó is rendelkezik. Ha CMS-t használtok a projekt során,
+                        akkor a telepítésen kívül nem igazán találkoztok a CMS-t kiszolgáló adatbázissal.</p>
+                </div>
+                <div class="content">
+                    <h2>Front end programozó</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>HTML, CSS szaktudás</li>
+                        <li>Honlapkészítési tapasztalat</li>
+                        <li>Alapvető CMS-ek ismerete</li>
+                        <li>Reszponzív tervezés alapos ismerete</li>
+                    </ul>
+                    <p>Nem az adatbázis felőli részen programoz, hanem a webdesigner-rel van szorosabb kapcsolatban.
+                        HTML, JS, CSS guru, akinek sok köze van ahhoz, hogyan fognak kinézni a weboldalak. 
+                        Bonyolítja a helyzetet, ha CMS rendszerben készül a weboldal, hiszen ekkor mindig egy már
+                        meglévő sminkből (Drupal), sablonból (Wordpress) kell kiindulni, és a meglévő fogalmakkal,
+                        objektumokkal, CSS file-okkal kell dolgoznod. A leggyakoribb, hogy a webdesigner a Wordpress-hez
+                        is ért, rátanul egy jól paraméterezhető, modern, responsive sablonra, és már eleve erre tervez.
+                        A CMS-eknek az egyik legnagyobb hátránya, hogy sok korláttal rendelkeznek éppen a webdesign
+                        terén. Vannak olyan webdesign kérések, amiket az adott sablonnal szinte lehetetlen teljesíteni.
+                    </p>
+                </div>
+                <div class="content">
+                    <h2>CMS programozó</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Mély CMS szaktudás</li>
+                        <li>Csapatmunka</li>
+                        <li>Kommunikációs készség</li>
+                    </ul>
+                    <p>Előfordul, hogy a Wordpress vagy a Drupal rendszer nem tud valamilyen egyedi igényt kiszolgálni.
+                        Ilyenkor fog színre lépni az ezekre a rendszerekre szakosodott programozó. Kiegészíti, vagy
+                        módosítja a standard tartalomkezelő rendszereket, hogy az elképzelt működés megvalósulhasson, és
+                        ne kelljen teljesen egyedi fejlesztésbe belefogni.</p>
+                </div>
+                <div class="content">
+                    <h2>Site builder</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Mély CMS szaktudás</li>
+                        <li>Csapatmunka</li>
+                        <li>Kommunikációs készség</li>
+                        <li>Webshop és online marketing ismeretek</li>
+                    </ul>
+                    <p>Valamilyen tartalomkezelő rendszer segítségével szinte
+                        bármilyen honlap-működést elő tud állítani a hírlevél küldéstől a webshopokig. A rendszer tervezésebe, illetve az árak kalkulálásába is érdemes
+                        beleszólnia, hiszen neki van a legnagyobb rálátása a Wordpress lehetőségeire, képességeire. Ő
+                        tudja legpontosabban megítélni, hogy az adott felhasználói igény mennyi időt vesz igénybe és
+                        milyen bonyolultságú a megvalósítása.</p>
+                </div>
+                <div class="content">
+                    <h2>Webdesigner</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Szaktudás</li>
+                        <li>Középfokú Photoshop és Illustrator ismeretek</li>
+                        <li>Fejlett vizuális kommunikációs- és színérzék</li>
+                        <li>Előny a CSS és HTML ismeret</li>
+                        <li>CMS-ek alaposabb ismerete</li>
+                        <li>Digitális képfeldolgozásban, illetve vektorgrafikában való jártasság</li>
+                    </ul>
+                    <p>Megtervezi az oldalak és a portál részletes szerkezetét. A weboldalak blokkjainak elrendezéséért,
+                        az oldalak felépítéséért felel. Leszállítja azokat a grafikai alkatrészeteket, amire szükség van
+                        az adott stílus megvalósításához. Gondoskodik róla, hogy ha kell a meglévő vagy éppen készülő
+                        arculatba illeszkedjen a weboldal. Különösen hangsúlyos a címoldal és a hirdetések érkezési
+                        oldalainak online marketing alapon történő megtervezése, vizuális kialakítása.
+
+                        A honlap teljes tervezését, a működési és rendszer tervezést is sokszor a webdesigner végzi. Egy
+                        átlagos, standard működési elemeket felvonultató honlap esetén ez nem okoz gondot. Ha tisztában
+                        van a folyamatokkal, a webergonómiai szemlélettel, és a felhasználói élmény szempontjait is
+                        figyelembe veszi, akkor teljes értékű honlapot tud készíteni. A teljes tervezés sokszor azért
+                        marad egy kézben, mert a különböző szempontokat integráltan kell alkalmazni, és ez nem könnyű.
+                        Egy új felhasználói igény esetén megváltozhatnak a folyamatok, a képernyőképek, de például a
+                        szlogen lecserélése kihathat a címoldali induló slide-ra is.</p>
+                </div>
+                <div class="content">
+                    <h2>Arculattervező</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Felsőfokú Photoshop és Illustrator ismeretek</li>
+                        <li>Művészeti véna</li>
+                        <li>Vizuális kommunikáció profi szinten</li>
+                        <li>Nyomdai ismeretek, kapcsolatok</li>
+                    </ul>
+                    <p>Az adott márka vizuális megjelenítéséért felel. A logó, a céges boríték, a Facebook oldal fejléce
+                        és a weboldal is az arculat részét képezi. Sokszor kell a weboldalnak már meglévő arculathoz
+                        illeszkednie és sokszor csináltatják mással az arculatot, mint a weboldalt. Mivel könnyen
+                        marketingelhető, a honlap készítéstől függetlenül végezhető tevékenység, jól leválasztható,
+                        azonban sok előnye van, ha egyszerre készül az arculat és a weboldal, illetve, ha ugyanaz
+                        tervezi mindkettőt. </p>
+                </div>
+                <div class="content">
+                    <h2>Webgrafikus, illusztrátor</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Felsőfokú Photoshop és Illustrator ismeretek</li>
+                        <li>Művészeti véna</li>
+                        <li>Jó kommunikációs készség</li>
+                        <li>Instruálhatóság</li>
+                        <li>Alkalmazkodóképesség az ügyfél igényeihez</li>
+                    </ul>
+                    <p>Az oldalt alkotó bonyolultabb grafikai elemeket rajzolja meg vektorgrafikai eszközökkel. Az
+                        illusztráció alapú honlapoknál szokott a webdesignertől elválni ez a szerepkör. Ha gyorsan kell,
+                        sok egyedi grafikai elemet előállítani, ha nem lehet a pár dolláros piaci ikonokat használni,
+                        vagy nem elég a stock oldalak vektoros kínálata, akkor van értelme a külön grafikusnak. Érdekes
+                        lehet ilyenkor, hogy ha nem ő tartja a kapcsolatot az ügyféllel, akkor hogyan kapja meg a
+                        sokszor homályos ügyfél-instrukciókat. Ezeket az
+                        illusztrátorokat érdemes megismerned és követni a Behance-on.</p>
+                </div>
+                <div class="content">
+                    <h2>SEO szakértő</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Szakértelem</li>
+                        <li>szövegírás</li>
+                        <li>kapcsolódó CMS ismeretek</li>
+                        <li>analitikai eszközök ismerete</li>
+                    </ul>
+                    <p>A keresőoptimalizálásért felel, azaz, hogy a weboldal az idők folyamán egyre jobb helyezéseket
+                        érjen el a találati listákban. CMS alkalmazása esetén a sitebuilder-nek ismernie kell a
+                        területtel kapcsolatos modulokat és paraméterezésüket, hiszen ez ma már alap elvárás egy honlap
+                        felé.</p>
+                </div>
+                <div class="content">
+                    <h2>Online marketinges</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Marketing és online marketing szaktudás</li>
+                        <li>analitikai eszközök ismerete</li>
+                        <li>keresőoptimalizálás</li>
+                        <li>szövegírói és vizuális kommunikációs képességek</li>
+                    </ul>
+                    <p>A weboldal marketing értékéért felel. Felügyeli a kampányokat, meghatározza a hirdetések érkezési
+                        oldalait. A webdesigner-rel szoros kapcsolatban kell dolgoznia.</p>
+                </div>
+                <div class="content">
+                    <h2>Szövegíró</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Tehetség, blogírói, újságírói, tartalomszerkesztői gyakorlat
+                        <li>A célközönség nyelvén való kommunikáció</li>
+                        <li>Képszerkesztői véna előny</li>
+                    </ul>
+                    <p>Megírja a híreket, a blogbejegyzéseket. Működteti a közösségi oldalakat és felügyeli azok
+                        kapcsolatát a honlappal. Tisztában kell lennie a belső keresőoptimalizálási elvekkel, és
+                        ezt folyamatosan alkalmaznia kell a szövegek megírása során, az alcímek, a tagolás, a
+                        képaláírások, kiemelések, kategóriák meghatározásakor. A tartalomszervezés nagyon fontos, a
+                        kategóriák, címkék, belső linkek kialakításához ismerni kell az adott területet. Egy márkához
+                        tartozó minden felületnek konzisztensnek, egymást kiegészítőnek és támogatónak kell lennie,
+                        ehhez pedig rendszerben kell tudni gondolkodni.</p>
+                </div>
+                <div class="content">
+                    <h2>Fotós</h2>
+                    <span>Szükséges képességek:</span>
+                    <ul>
+                        <li>Szaktudás</li>
+                        <li>digitális képfeldolgozás</li>
+                        <li>kapcsolatrendszer (stylist, kozmetikus, fodrász, műterem, stb.)</li>
+                    </ul>
+                    <p>Ha hangsúlyos a képanyag a honlapon, akkor érdemes profi fotóst megbízni a képek elkészítésével.
+                        Portréfotók, épületek, képeken megjeleníthető referenciák, termék fotók a leggyakoribbak, de a
+                        rendezvények képanyaga is sokszor a honlapon köt ki. A cég tevékenysége során, ha már ismerjük a
+                        honlap felépítését, akkor célirányosan lehet fotózni, akár fotós nélkül is. Ehhez ismerni kell a
+                        honlapon alkalmazott vizuális koncepciót, az arculati elemeket, a képanyagra vonatkozó
+                        instrukciókat. A honlapon számtalan formában megjelenhetnek a képek, sok esetben valamilyen
+                        formában képszerkesztő programmal manipulálva.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="callMe" style="background: #1d1d1d">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="text-container about">
+                        <h4>Few Words About WebdesignAlapfokon</h4>
+                        <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Linkek</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white" href="#your-link">XY.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Eszközök</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">XY.com</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">XY.com</a>
+                            </li>
+                            <li class="media">
+                                <a class="white" href="#your-link">CX.hu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Partners</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="#your-link">m</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">m</a>
+                            </li>
+                            <li>
+                                <a class="white" href="#your-link">x</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright" style="background: #1d1d1d">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">2022 WebdesignAlapfokon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+        //Javascript -- responsive navigation menu
+        const primaryNav = document.querySelector(".primary-navigation");
+        const navToggle = document.querySelector(".menu-btn");
+
+        navToggle.addEventListener("click", () => {
+            const visibility = primaryNav.getAttribute('data-visible');
+
+            if (visibility === "false") {
+                primaryNav.setAttribute("data-visible", true)
+                navToggle.setAttribute("aria-expanded", true)
+            }
+            else if (visibility === "true") {
+                primaryNav.setAttribute("data-visible", false)
+                navToggle.setAttribute("aria-expanded", false)
+            }
+        })
+
+        //Javascript -- video slider
+        const btns = document.querySelectorAll(".nav-btn");
+        const slides = document.querySelectorAll(".video-slider");
+        const contents = document.querySelectorAll(".content");
+
+        var sliderNav = function (manual) {
+            btns.forEach((btn) => {
+                btn.classList.remove("active");
+            });
+
+            slides.forEach((slide) => {
+                slide.classList.remove("active");
+            });
+
+            contents.forEach((text) => {
+                text.classList.remove("active");
+            });
+
+            btns[manual].classList.add("active");
+            slides[manual].classList.add("active");
+            contents[manual].classList.add("active");
+        }
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                sliderNav(i)
+            });
+        });
+
+    </script>
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/UserCursor.js"></script> <!-- Custom cursor -->
 </body>
+
 </html>

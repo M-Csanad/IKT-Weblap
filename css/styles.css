@@ -6,6 +6,7 @@ body,
 html {
     width: 100%;
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 body, p {
@@ -71,21 +72,62 @@ a.white,
 	color: #dfe5ec;
 }
 
+.colored-text{
+	color: e2be00;
+}
+
 .testimonial-text {
 	font-style: italic;
+}
+
+.testimonial-text-colored {
+	font-style: italic;
+	color: #e2be00;
 }
 
 .testimonial-author {
 	font: 700 1rem/1.375rem "Montserrat", sans-serif;
 }
 
+.hovertext{
+	font-style: italic;
+	text-decoration: underline;
+
+}
+
+.hovertext:before {
+	content: attr(data-hover);
+	visibility: hidden;
+	opacity: 0;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	width: max-content;
+	border-radius: 5px;
+	padding: 5px 5px;
+	transition: opacity 1s ease-in-out;
+  	position: absolute;
+	left:auto;
+	top:auto;
+	font-size: small;
+}
+
+.hovertext:hover:before {
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
 strong {
 	color: #e1e1e1;
+	font-weight: bold;
 }
 
 .section-title {
 	color: #e2be00;
 	font: 500 0.8125rem/1.125rem "Montserrat", sans-serif;
+
 }
 
 .btn-solid-reg {
@@ -514,8 +556,8 @@ input[type='checkbox'] {
 }
 
 .fadeOut {
-	-webkit-animation: fadeOut 0.8s;
-	animation: fadeOut 0.8s;
+	-webkit-animation: fadeOut 0.6s;
+	animation: fadeOut 0.6s;
 }
 /* end of fade animation for image slider - magnific popup */
 
@@ -799,7 +841,7 @@ input[type='checkbox'] {
 
 
 /*********************/
-/*     Header     */
+/*     Header        */
 /*********************/
 .header {
 	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), center center no-repeat;
@@ -843,7 +885,7 @@ input[type='checkbox'] {
 		padding-bottom: 15rem;
 	}
 
-	.header .text-container {
+.header .text-container {
 		margin-top: 6.5rem;
 	}
 
@@ -913,18 +955,18 @@ input[type='checkbox'] {
 }
 
 /* Hover Animation */
-.basic-1 .image-container {
+.image-container {
 	overflow: hidden;
 	border-radius: 0.25rem;
 }
 
-.basic-1 .image-container img {
+.image-container img {
 	margin: 0;
 	border-radius: 0.25rem;
 	transition: all 0.3s;
 }
 
-.basic-1 .image-container:hover img {
+.image-container:hover img {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
@@ -933,7 +975,7 @@ input[type='checkbox'] {
 
 
 /************************/
-/*     07. Szolgáltatás    */
+/*  07. Szolgáltatás    */
 /************************/
 .cards-2 {
 	padding-top: 6.625rem;	
@@ -1149,7 +1191,7 @@ input[type='checkbox'] {
 	position: relative;
 	float: left;
 	overflow: hidden;
-	background-color: #000; /* to hide 1px white margin in IE */
+	background-color: #000; /* to hide 1px white margin */
 }
 
 .filter .element-item img {
@@ -1165,7 +1207,7 @@ input[type='checkbox'] {
 } 
 /* end of hover animation */
 
-.filter .element-item .element-item-overlay { 
+.filter .element-item:hover .element-item-overlay { 
 	position: absolute;
 	z-index: 2;
 	top: 0;
@@ -1185,8 +1227,21 @@ input[type='checkbox'] {
 	right: 0;
 	left: 0;
 	color: #fff;
+	text-indent: -99999px;
 	font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
 }
+
+.filter .element-item:hover .element-item-overlay span { 
+	position: absolute;
+	z-index: 3;
+	top: 42%;
+	right: 0;
+	left: 0;
+	color: #fff;
+	text-indent: 0px;
+	font: 700 1.125rem/1.625rem "Montserrat", sans-serif;
+}
+
 
 
 /**********************************/
@@ -1316,40 +1371,37 @@ footer ul {
 /*****************************/
 /*     21. Media Queries     */
 /*****************************/	
-/* Min-width width 768px */
-@media (min-width: 768px) {
+
+/* Max-width width 950px - BugFix */
+@media (min-width: 950px){
 	
-	/* General Styles */
-	.p-heading {
-		width: 85%;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	/* end of general styles */
-
-
-
-	/* Projects */
-	.filter .element-item { 
-		width: 25%; 
-	}
-	
-	.filter .element-item .element-item-overlay { 
-		opacity: 0;
-		transition: opacity 0.3s ease;
-	}
-
-	.filter .element-item:hover .element-item-overlay {
-		opacity: 1;
-	}
-	/* end of projects */
+	/* Description */
+.cards-1 {
+	padding: 20px; 
+	justify-content: center;
+	display: flex;
 }
-/* end of min-width width 768px */
 
+.cards-1 .card {
+	display: inline-block;
+	width: 17.5rem;
+	text-align: left;
+	vertical-align: top;
 
-/* Min-width width 992px */
-@media (min-width: 992px) {
+}
+
+.cards-1 div.card:nth-child(3n+2) {
+	margin-right: 0.625rem;
+	margin-left: 0.625rem;
+}
+/* end of description */
+
+}
+
+/* Min-width width 950px */
+@media (max-width: 950px) {
 	
+
 	/* General Styles */
 	.p-heading {
 		width: 65%;
@@ -1366,96 +1418,6 @@ footer ul {
 	}
 	/* end of intro */
 
-
-	/* Description */
-	.cards-1 .card {
-		display: inline-block;
-		max-width: 17.5rem;
-		text-align: left;
-		vertical-align: top;
-		justify-content: center;
-	}
-	
-	.cards-1 div.card:nth-child(3n+2) {
-		margin-right: 2.5rem;
-		margin-left: 2.5rem;
-	}
-	/* end of description */
-
-
-	/* Services */
-	.cards-2 .card {
-		max-width: 18.25rem;
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.cards-2 .col-lg-12 div.card:nth-child(3n+2) {
-		margin-right: 1.25rem;
-		margin-left: 1.25rem;
-	}
-	/* end of services */
-
-
-	/* Details 1 */
-	.accordion {
-		height: 34.625rem;
-	}
-	
-	.accordion .area-1 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-	}
-	
-	.accordion .area-2 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-		vertical-align: top;
-	}
-	
-	.accordion .accordion-container {
-		max-width: 88%;
-		margin-left: 2rem;
-		padding-bottom: 0;
-	}
-
-	.accordion .accordion-title {
-		width: 85%;
-	}
-	/* end of details 1 */
-
-
-	/* Details 2 */
-	.tabs {
-		height: 36.125rem;
-	}
-
-	.tabs .area-1 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-		vertical-align: top;
-	}
-
-	.tabs .area-2 {
-		width: 50%;
-		height: 100%;
-		display: inline-block;
-	}
-
-	.tabs .tabs-container {
-		max-width: 88%;
-		margin-left: 2rem;
-		padding-top: 6.75rem;
-		padding-bottom: 0;
-	}
-
-	.tabs .nav-tabs {
-		justify-content: flex-start;
-	}
-	/* end of details 2 */
 
 	/* Project Lightboxes */
 	.lightbox-basic img {
@@ -1479,12 +1441,7 @@ footer ul {
 	}
 	/* end of about */
 }
-/* end of min-width width 992px */
 
-
-/* Min-width width 1200px */
-@media (min-width: 1200px) {
-	
 	/* General Styles */
 	.p-heading {
 		width: 55%;
@@ -1498,59 +1455,31 @@ footer ul {
 		margin-right: 3rem;
 	}
 	/* end of intro */
-
-
+	
 	/* Description */
+
+	.cards-1 {
+		padding: 20px; 
+		justify-content: center;
+		display: flex;
+	}
+
 	.cards-1 .card {
-		max-width: 21rem;
-	}
+		display: inline-block;
+		text-align: left;
+		vertical-align: top;
 
-	.cards-1 div.card:nth-child(3n+2) {
-		margin-right: 2.875rem;
-		margin-left: 2.875rem;
 	}
+	.cards-1 div.card {
+		margin-bottom: 0.625rem;
+		margin-top: 0.625rem;
+	}
+	
 	/* end of description */
-
-
-	/* Services */
-	.cards-2 .card {
-		max-width: 20.875rem;
-	}
-
-	.cards-2 .card-body {
-		padding: 2.25rem 2.5rem 2.125rem 2.5rem;
-	}
-
-	.cards-2 .col-lg-12 div.card:nth-child(3n+2) {
-		margin-right: 3rem;
-		margin-left: 3rem;
-	}
-	/* end of services */
-
-
-	/* Details 1 */
-	.accordion .accordion-container {
-		max-width: 28rem;
-		margin-left: 5rem;
-	}
-	/* end of details 1 */
-
-
-	/* Details 2 */
-	.tabs .tabs-container {
-		max-width: 28rem;
-		margin-right: 5rem;
-		margin-left: auto;
-	}
-
-	.tabs #tab-2 .media-wrapper.first {
-		margin-right: 2rem;
-	}
-	/* end of details 2 */
 
 	/* Projects */
 	.filter .element-item {
-		width: 17.3125rem; /* to eliminate grid overflow problem on hard refresh */
+		max-width: 17.3125rem; /* to eliminate grid overflow problem on hard refresh */
 	}
 
 	.filter .element-item .element-item-overlay span { 
@@ -1580,13 +1509,5 @@ footer ul {
 		margin-right: 5rem;
 	}
 	/* end of footer */
-}
+
 /* end of min-width width 1200px */
-
-
-/* Min-width width 1600px */
-@media (min-width: 1600px) {
-	
-
-	/* end of navigation */
-}

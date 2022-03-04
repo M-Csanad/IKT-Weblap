@@ -1,12 +1,445 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weboldal születik</title>
+
+    <!-- Styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
+        rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/fontawesome-all.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/header-style.css" rel="stylesheet" />
+    <link href="css/site02-style.css" rel="stylesheet" />
+
+    <!-- Favicon  -->
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
 </head>
-<body>
-    
+
+<body data-spy="scroll" data-target=".fixed-top">
+    <div class="UserCursor"></div>
+    <!-- Header -->
+    <header id="header">
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative" /></a>
+        <a href="#" class="brand">WebdesignAlapfokon</a>
+        <div class="menu-btn navbar fixed-top" aria-controls="primary-navigation" aria-expanded="false"></div>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html"><span area-hidden="true"></span>KEZDŐLAP</a>
+                </li>
+                <li>
+                    <a href="#intro" class="ex-hover page-scroll"><span aria-hidden="true">01</span>BEVEZETŐ</a>
+                </li>
+                <li>
+                    <a href="#process" class="ex-hover page-scroll"><span aria-hidden="true">02</span>FOLYAMAT</a>
+                </li>
+                <li>
+                    <a href="#work" class="ex-hover page-scroll"><span aria-hidden="true">03</span>SZAKMA</a>
+                </li>
+                <li>
+                    <a href="#callMe" class="ex-hover page-scroll"><span aria-hidden="true">04</span>KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Search bar -->
+        <div class="search">
+            <div class="search_icon"></div>
+            <div class="search_input">
+                <input type="text" placeholder="Search" id="myplaceholder" />
+            </div>
+            <span class="search_cl" onclick="document.getElementById('myplaceholder').value = ''"></span>
+        </div>
+    </header>
+
+    <!-- Slider & Home -->
+    <selection class="home">
+        <video class="video-slider" src="images/slider-vid01.mp4" autoplay loop muted></video>
+        <video class="video-slider active" src="images/slider-vid02.mp4" autoplay loop muted></video>
+        <video class="video-slider" src="images/slider-vid03.mp4" autoplay loop muted></video>
+        <div class="content">
+            <h1>Webdesigner<br /><span>feladata</span></h1>
+            <p>
+                A webdesigner tervezi meg az oldal szerkezeti felépítését, arculatát,
+                meghatározza mi, hol és hogyan helyezkedjen el. Egy jó webdesigner
+                minden területhez ért és átlátja az egyes folyamatokat. További
+                információkért kattints a gombra!
+            </p>
+            <a href="site01-index.html">Olvass Tovább</a>
+        </div>
+        <div class="content active">
+            <h1>Tervezés<br /><span>Weboldal születik</span></h1>
+            <p>
+                Érdekel hogy kell nekikezdeni egy weboldalnak? Vannak ötleteid, de nem
+                tudod, hogy fogj hozzá?
+            </p>
+            <a href="site02-index.html">Olvass Tovább</a>
+        </div>
+        <div class="content">
+            <h1>Weblap<br /><span>létrejötte</span></h1>
+            <p>
+                A megbízás teljesítése a megadott határidőn belül,a megbízó folyamatos
+                tájékoztatása és esetleges észrevételeinek figyelembevétele.
+            </p>
+            <a href="site03-index.html">Olvass Tovább</a>
+        </div>
+        <span class="social-icons">
+            <a class="fa-stack">
+                <a href="https://github.com/M-Csanad/IKT-Weblap">
+                    <i class="fab fa-brands fa-github fa-stack-1x"></i>
+                </a>
+            </a>
+        </span>
+        <div class="slider-navigate">
+            <div class="nav-btn"></div>
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </selection>
+
+    <!-- Intro -->
+    <div id="intro" class="basic-1" style="background: #1d1d1d">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/site02_dreams.webp" alt="The sign" />
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="text-container">
+                        <div class="section-title">Webdesignernek lenni életforma</div>
+                        <h2>Weboldal születik</h2>
+                        <p>
+                            <span class="testimonial-text">Üdvözöllek </span>kedves olvasó!
+                            Bizonyára már te is hallottad, hogy azt mondják valakire vagy
+                            valamire, hogy "kreatív". De mit is jelent pontosan ez a szó
+                            vagy kifejezés? Sokszor használják, ha valami absztrakt, színes
+                            vagy ember esetében (pozitív értelemben) nem megszokott ötlettel
+                            áll elő.
+                        </p>
+                        <p>
+                            De ez mind csak félig igaz. A szó valójában azt jelenti, hogy
+                            egyedi és különleges dolgot hozott létre a képzeletével vagy az
+                            ötlet, mely megszületett benne, az egy "másfajta" szemléleti
+                            módot takar.
+                        </p>
+                        <p>
+                            Én megpróbállak rávezetni, hogy lásd másképp a dologokat a
+                            design világában és így állj elő egyedi ötletekkel.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Process -->
+
+    <div id="process" style=" background: #1b1b1b">
+        <div class="section_title">
+            <h2>Tervezéstől az értékesítésig</h2>
+            <p>
+                Először is nézzük meg, milyen szempontok jellemzik ezt a folyamatot.
+                Általánosítva írom le a lépéseket, mivel minden embernél más és más
+                lehet a folyamat sorrendje.
+            </p>
+        </div>
+
+
+        <div class="content-lg">
+            <div class="row"> <!--small screen Fit-out problem-->
+                <div class="col-lg-6 icon-box">
+                    <div class="icon"><i class="bi bi-lightbulb"></i></div>
+                    <h4 class="title"><a href="">Ötlet</a></h4>
+                    <p class="description">
+                        A elképzelés az egyik, ha nem a legfontosabb része a munkánknak. Ha
+                        nincs ötlet, akkor nincs munka amit el tudnánk végezni. A gondolat
+                        kipattan a fejedből, melyet meg fogsz valósítani.
+                        <span class="testimonial-text-colored">Tanácsként:</span> mindíg
+                        vedd figyelembe az ötletelésnél az alapkoncepciót. Mit kér a
+                        megrendelő? Mi legyen az alaptémája, milyen hangulatot keltsen egy
+                        látogatóban a weboldalad?<br />
+                        <strong>Minden ötlet jó ötlet, csak bele kell látni a lehetőséget</strong>
+                    </p>
+                </div>
+                <div class="col-lg-6 icon-box">
+                    <div class="icon"><i class="bi bi-gear"></i></div>
+                    <h4 class="title"><a href="">Megtervezés</a></h4>
+                    <p class="description">
+                        Mint említettem, a
+                        <span class="testimonial-text">célközönség véleménye és gondolatai
+                            <span class="testimonial-text-colored">fontosak</span></span>, ha egy megrendelésről
+                        beszélünk.
+                        Tapasztalatom szerint, sokszor
+                        maga a vevő sem tudja mit szeretne, ezért nekünk kell rávezetni
+                        saját ötletek alapján, mit tart jónak. Utána, ezen az úton megyünk
+                        tovább a tervezésnél.<br />Én a tervezést fejben végzem. Nekikezdek,
+                        dolgozok, és idővel kialakul az a kép a fejemben, amit szeretnék
+                        megcsinálni. Ez mindennél így van. A tervezés elnyúlik a projekt
+                        elejétől a végéig, hiszen az egész egy
+                        <span class="testimonial-text">hatalmas terv</span>, amit meg
+                        szeretnénk valósítani.
+                    </p>
+                </div>
+                <div class="col-lg-6 icon-box">
+                    <div class="icon"><i class="bi bi-brush"></i></div>
+                    <h4 class="title"><a href="">Formázás</a></h4>
+                    <p class="description">
+                        Egy másik hosszadalmas időszak, mely a megtervezéstől kezdve a
+                        projekt végéig tart. Itt történik minden: Alakítjuk, csiszolgatjuk a
+                        weboldalt, ebben a stádiumban építjük fel a kódunkat és
+                        kísérletezünk, hogy néz ki a legjobban, emellett melyik a
+                        legkézenfekvőbb megoldás a kivitelezéshez, hiszen mindenkinek az a
+                        célja, hogy, ha van egy probléma, azt a
+                        <span class="testimonial-text">leghatékonyabb</span> eszközökkel
+                        oldjuk meg.<br />Amikre figyelni kell, hogy SOHA ne legyen egy
+                        weboldal giccses. Próbáljunk meg ráfeküdni a
+                        <span class="testimonial-text">modernségre</span> és az
+                        <span class="testimonial-text">egyszerűségre</span>, ha a dizájnról
+                        van szó. <span class="testimonial-text-colored">Fontos,</span> hogy
+                        mindíg ellenőriztessük egy külső szemlélővel/megrendelővel a
+                        weboldalt, mert egy olyan személy, aki nem vesz részt a mi
+                        munkánkban, képes észrevenni apró problémákat, amihez mi már
+                        hozzászoktunk és elkerüli a figyelmünket.
+                    </p>
+                </div>
+                <div class="col-lg-6 icon-box">
+                    <div class="icon"><i class="bi bi-magic"></i></div>
+                    <h4 class="title"><a href="">Apró csiszolások</a></h4>
+                    <p class="description">
+                        Egy weboldalhoz mindíg jönnek újabb és újabb elemek, de ebben az
+                        esetben, mint
+                        <stan class="testimonial-text">"végső csiszolás"</stan> nem ezt
+                        értem. Miután egy weboldal elkészítése már a végső szakaszába
+                        érkezett, nem árt egy kis szünetet tartani. Hagyjunk időt az
+                        agyunknak és a szemünknek, hogy pihenjen. Miért fontos ez? Azért,
+                        mert egy bizonyos idő elteltével észrevehetünk aprócska elemeket,
+                        amiken még változtatni szeretnénk vagy csak egyszerűen rájövünk,
+                        hogy ezt másképp kellett volna. Fontos, hogy nem szabad elkapkodni a
+                        munkánkat akár ingyen csináljuk, akár megrendelésre készítjük el.
+                        Lényeges az állandó kontroll aközött amit akarunk és amit csinálunk.
+                        Természetesen extrákat is belerakhatunk, hiszen ezek az elemek
+                        fűszerezik meg munkánkat és teszik eladhatóvá a terméket.
+                    </p>
+                </div>
+                <div class="col-lg-6 icon-box">
+                    <div class="icon"><i class="bi bi-coin"></i></div>
+                    <h4 class="title"><a href="">Optimalizálás a piacra</a></h4>
+                    <p class="description">
+                        Kell erről beszélni? Hiszen ez mondhatni magától jön. Minden
+                        terméket, legyen az szellemi vagy fizikai, mindíg a piacra
+                        optimalizálják. Minél jobban tetszik a közönségnek, annál nagyobb
+                        eséllyel fog kamatozni a munkád. Egy weboldalt
+                        <span class="hovertext" data-hover="pl.: keresőoptimalizálás">szoftveresen</span>
+                        is, mint piaci értelemben
+                        <span class="testimonial-text-colored">kell optimalizálni</span>.
+                        Bár a két dolog kicsit eltérő, de a végeredmény ugyan az,
+                        <strong>minél közelebb kerüljön a projekted a piac
+                            <span class="hovertext"
+                                data-hover="téged talál meg a célközönség elsőnek">csúcsához!</span></strong>
+                    </p>
+                </div>
+                <div class="col-lg-6 icon-box">
+                    <div class="icon"><i class="bi bi-gem"></i></div>
+                    <h4 class="title"><a href="">Kész termék</a></h4>
+                    <p class="description">
+                        A projektnek vége, a tartalom a weboldallal együtt befejeződött.
+                        Készen áll, hogy egy saját domaint társítsunk hozzá és publikáljuk
+                        az interneten. Egy kész weboldal csak akkor van igazán kész, ha te
+                        magad is meg vagy elégedve a munkáddal és úgy gondolod, hogy
+                        fogyasztható kontenttel láttad el oldalad. Az emberek többsége
+                        vizuális bállítottságú, ami azt jelenti, hogy a formák, a színek, az
+                        esztétikailag különleges weboldalak vonzzák őket. Ha a
+                        végeredményed:
+                        <span class="hovertext" data-hover="meleg színek, sötét mód lehetősége, nyugató formák...">jó a
+                            szemnek</span>, érdeklődésfelkeltő a téma amit kidolgoztál, nem túloztad el a
+                        megjelenést, modern megjelenésre öszpontosítottál, vittél bele
+                        <span class="hovertext"
+                            data-hover="videó slider, popups, animációk, részlet design...">különleges
+                            elemeket</span>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--work-->
+
+    <div id="work" style="background: #1d1d1d">
+        <div class="section_title">
+            <h2>Kik a webdesignerek?</h2>
+            <p>
+                Sokan azt hiszik, hogy a webdesigner, mint kifejezés végetér annyiban,
+                hogy képes kódolni és felépíteni egy weblapot. A webdizájn egy szakma, amely némi érzéket,
+                adottságot, valamint széleskörű ismereteket és rengeteg tapasztalatot igényel. Olyan
+                tulajdonságokat
+                és készségeket gyűjtöttem össze, mellyel webdesignerként rendelkezned
+                kell.
+            </p>
+        </div>
+        <div class="container-fluid">
+            <div class="content-sm row">
+                <div class="col-lg-4">
+                    <div>
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/site02_draw-work.webp" alt="Draw" />
+                        </div>
+                        <div class="under-img">
+                            <span class="under-img-left">Balázs Kétyi</span>
+                            <span class="under-img-right">Unsplash</span>
+                        </div>
+                        <div>
+                            <h4 class="title"><a href="">Átlátja a projektet</a></h4>
+                            <p class="description">Egy vérbeli webdesigner az üzleti téren is jártas és lehet rá
+                                számítani más témákban is. Tanácsot tud adni, hogy növeld meg a weboldalad
+                                keresetét, tanulmányozza a koncepciót, az arculatot és stílusra szabja a
+                                megjelenést.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div>
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/site02_gentleman-work.webp" alt="Draw" />
+                        </div>
+                        <div class="under-img">
+                            <span class="under-img-left">Hunters Race</span>
+                            <span class="under-img-right">Unsplash</span>
+                        </div>
+                        <div>
+                            <h4 class="title"><a href="">Karizmatika és empátia</a></h4>
+                            <p class="description">Fontos, hogy közös nyelvet beszéljenek a megrendelővel. Képesnek
+                                kell felismerni, hogy egy megrendelésnél mennyire tudunk összhangban cselekedni a
+                                vevővel, hiszen, ha ez hiányzik, akkor a szakmai összhang problémás és ez a munkánk
+                                rovására mehet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div>
+                        <div class="image-container">
+                            <img class="img-fluid" src="images/site02_special-work.webp" alt="Draw" />
+                        </div>
+                        <div class="under-img">
+                            <span class="under-img-left">Miguel Á. Padriñán</span>
+                            <span class="under-img-right">Pexels</span>
+                        </div>
+                        <div>
+                            <h4 class="title"><a href="">Átláthatóság és stílus</a></h4>
+                            <p class="description">Reszponzív weboldalak létrehozásában otthonosan mozog és képes
+                                egy átlátható honlapot létrehozni. Mindegyik webdesigner rendelkezik egy egyedi
+                                stílussal, melybe mondhatni a "névjegyét" teszi.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer id="callMe" style="background: #1d1d1d">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="text-container about">
+                        <h4>Néhány szó az oldalról</h4>
+                        <p class="white">
+                            A weboldal tanítói céllal jött létre. Általunk felépítheted
+                            alaptudásod pilléreit a webfejlesztéssel kapcsolatban.<br />A
+                            lépéseket három részre bontva tekintheted meg oldalunkon.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Egyéb</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white">! Rólunk</a>
+                            </li>
+                            <li>
+                                <a class="white">! Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Linkek</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="https://www.pexels.com/" target="_blank">Pexels</a>
+                            </li>
+                            <li>
+                                <a class="white" href="https://www.youtube.com/" target="_blank">YouTube</a>
+                            </li>
+                            <li>
+                                <a class="white" href="https://unsplash.com/" target="_blank">Unsplash</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-container">
+                        <h4>Elérhetőség</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white">10c-halasi@ipari.vein.hu</a>
+                            </li>
+                            <li>
+                                <a class="white">10c-milkovics@ipari.vein.hu</a>
+                            </li>
+                            <li>
+                                <a class="white">10c-ivanyi@ipari.vein.hu</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright -->
+    <div class="copyright" style="background: #1d1d1d">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">2022 WebdesignAlapfokon</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Scroll to the top-->
+    <div class="top-button">
+        <a href="#" class="back-to-top page-scroll"><i class="icon-chevron-up"></i></a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/jquery.easing.min.js"></script>
+    <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/scripts.js"></script>
+    <!-- Custom scripts -->
+    <script src="js/UserCursor.js"></script>
+    <!-- Custom cursor -->
 </body>
+
 </html>

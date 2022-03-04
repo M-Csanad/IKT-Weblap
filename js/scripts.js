@@ -8,53 +8,6 @@
         $(".navbar-collapse").collapse('hide');
     });
 
-    /* Card Slider - Swiper */
-	var cardSlider = new Swiper('.card-slider', {
-		autoplay: {
-            delay: 4000,
-            disableOnInteraction: false
-		},
-        loop: true,
-        navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
-		},
-		slidesPerView: 3,
-		spaceBetween: 20,
-        breakpoints: {
-            // when window is <= 992px
-            992: {
-                slidesPerView: 2
-            },
-            // when window is <= 768px
-            768: {
-                slidesPerView: 1
-            } 
-        }
-    });
-
-    
-    /* Lightbox - Magnific Popup */
-	$('.popup-with-move-anim').magnificPopup({
-		type: 'inline',
-		fixedContentPos: false, /* keep it false to avoid html tag shift with margin-right: 17px */
-		fixedBgPos: true,
-		overflowY: 'auto',
-		closeBtnInside: true,
-		preloader: false,
-		midClick: true,
-		removalDelay: 300,
-		mainClass: 'my-mfp-slide-bottom'
-    });
-    
-
-    /* Filter - Isotope */
-    var $grid = $('.grid').isotope({
-        // options
-        itemSelector: '.element-item',
-        layoutMode: 'fitRows'
-    });
-    
     // filter items on button click
     $('.filters-button-group').on( 'click', 'a', function() {
         var filterValue = $(this).attr('data-filter');
@@ -81,23 +34,71 @@
 		}
     });
 
+    /* Search */
+    
+    const search = document.querySelector('.search');
+    const search_icon = document.querySelector('.search_icon');
+        search_icon.onclick = function(){
+            search.classList.toggle('active')
+
+        }
+
     /* Back To Top Button */
     // create the back to top button
-    $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
-    var amountScrolled = 700;
+    $('body').prepend('<a href="#" class="back-to-top page-scroll"></a>');
+    var amountScrolled = 100;
     $(window).scroll(function() {
         if ($(window).scrollTop() > amountScrolled) {
-            $('a.back-to-top').fadeIn('500');
+            $('a.back-to-top').fadeIn('200');
         } else {
-            $('a.back-to-top').fadeOut('500');
+            $('a.back-to-top').fadeOut('200');
         }
     });
 
-    
+    //Javascript -- responsive navigation menu
+    const primaryNav = document.querySelector(".primary-navigation");
+    const navToggle = document.querySelector(".menu-btn");
 
-	/* Removes Long Focus On Buttons */
-	$(".button, a, button").mouseup(function() {
-		$(this).blur();
-	});
+    navToggle.addEventListener("click", () => {
+        const visibility = primaryNav.getAttribute('data-visible');
+
+        if (visibility === "false") {
+            primaryNav.setAttribute("data-visible", true)
+            navToggle.setAttribute("aria-expanded", true)
+        }
+        else if (visibility === "true") {
+            primaryNav.setAttribute("data-visible", false)
+            navToggle.setAttribute("aria-expanded", false)
+        }
+    })
+
+
+    //Javascript -- video slider
+    const btns = document.querySelectorAll(".nav-btn");
+    const slides = document.querySelectorAll(".video-slider");
+    const contents = document.querySelectorAll(".content");
+
+    var sliderNav = function (manual) {
+        btns.forEach((btn) => {
+            btn.classList.remove("active");
+        });
+
+        slides.forEach((slide) => {
+            slide.classList.remove("active");
+        });
+
+        contents.forEach((text) => {
+            text.classList.remove("active");
+        });
+
+        btns[manual].classList.add("active");
+        slides[manual].classList.add("active");
+        contents[manual].classList.add("active");
+    }
+    btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+            sliderNav(i)
+        });
+    });
 
 })(jQuery);
