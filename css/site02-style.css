@@ -106,7 +106,7 @@
   letter-spacing: .8px;
 }
 #work .under-img .under-img-right{
-  padding-left: 25rem;
+  float:  inline-end;
   letter-spacing: 5px;
 }
 
