@@ -18,11 +18,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
-        rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
-    <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/header-style.css" rel="stylesheet">
 
@@ -33,18 +30,18 @@
 <body data-spy="scroll" data-target=".fixed-top">
 
     <div class="UserCursor"></div>
-
     <!-- Header -->
     <header id="header">
 
-        <!-- Image Logo -->
+    <!-- Image Logo -->
+
         <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
         <a href="#" class="brand">WebdesignAlapfokon</a>
         <div class="menu-btn navbar fixed-top" aria-controls="primary-navigation" aria-expanded="false"></div>
         <nav>
             <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                 <li class="active">
-                    <a href="index.html"><span aria-hidden="true">00</span>KEZDŐLAP</a>
+                    <a href="index.html"><span area-hidden="true"></span>KEZDŐLAP</a>
                 </li>
                 <li>
                     <a href="#intro" class="ex-hover page-scroll"><span aria-hidden="true">01</span>BEVEZETŐ</a>
@@ -61,9 +58,20 @@
                 </li>
             </ul>
         </nav>
+
+    <!-- Search bar -->
+
+    <div class="search">
+        <div class="search_icon"></div>
+        <div class="search_input">
+          <input type="text" placeholder="Search" id="myplaceholder">
+        </div>
+        <span class="search_cl" onclick="document.getElementById('myplaceholder').value = ''"></span>
+    </div>
     </header>
 
     <!-- Slider & Home -->
+
     <selection class="home">
         <video class="video-slider active" src="images/slider-vid01.mp4" autoplay loop muted></video>
         <video class="video-slider" src="images/slider-vid02.mp4" autoplay loop muted></video>
@@ -71,21 +79,17 @@
         <div class="content active">
             <h1>Webdesigner<br><span>feladata</span></h1>
             <p>A webdesigner tervezi meg az oldal szerkezeti felépítését, arculatát, meghatározza mi, hol és hogyan
-                helyezkedjen el. Egy jó webdesigner minden területhez ért és átlátja az egyes folyamatokat</p>
+                helyezkedjen el. Egy jó webdesigner minden területhez ért és átlátja az egyes folyamatokat. További információkért kattints a gombra!</p>
             <a href="site01-index.html">Olvass Tovább</a>
         </div>
         <div class="content">
-            <h1>Cím2<br><span>valami2</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
-            <a href="site02-index.html">Olvass Tovább</a>
-        </div>
+			<h1>Tervezés<br><span>Weboldal születik</span></h1>
+			<p>Érdekel hogy kell nekikezdeni egy weboldalnak? Vannak ötleteid, de nem tudod, hogy fogj hozzá? Látogass el hozzám!</p>
+			<a href="site02-index.html">Olvass Tovább</a>
+		</div>
         <div class="content">
-            <h1>Cím3<br><span>valami3</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.</p>
+            <h1>Weblap<br><span>létrejötte</span></h1>
+            <p>A megbízás teljesítése a megadott határidőn belül,a megbízó folyamatos tájékoztatása és esetleges észrevételeinek figyelembevétele.</p>
             <a href="site03-index.html">Olvass Tovább</a>
         </div>
         <span class="social-icons">
@@ -387,57 +391,57 @@
     </div>
 
     <!-- Footer -->
+    
     <footer id="callMe" style="background: #1d1d1d">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <div class="text-container about">
-                        <h4>Few Words About WebdesignAlapfokon</h4>
-                        <p class="white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.</p>
+                        <h4>Néhány szó az oldalról</h4>
+                        <p class="white">A weboldal tanítói céllal jött létre. Általunk felépítheted alaptudásod pilléreit a webfejlesztéssel kapcsolatban.<br>A lépéseket három részre bontva tekintheted meg oldalunkon.</p>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Egyéb</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white">!  Rólunk</a>
+                            </li>
+                            <li>
+                                <a class="white">!  Privacy Policy</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-md-2">
                     <div class="text-container">
                         <h4>Linkek</h4>
-                        <ul class="list-unstyled li-space-lg white">
+                        <ul class="list-unstyled li-space-lg">
                             <li>
-                                <a class="white" href="#your-link">XY.com</a>
+                                <a class="white" href="https://www.pexels.com/" target="_blank">Pexels</a>
                             </li>
                             <li>
-                                <a class="white" href="privacy-policy.html">Privacy Policy</a>
+                                <a class="white" href="https://www.youtube.com/" target="_blank">YouTube</a>
+                            </li>
+                            <li>
+                                <a class="white" href="https://unsplash.com/" target="_blank">Unsplash</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-3">
                     <div class="text-container">
-                        <h4>Eszközök</h4>
+                        <h4>Elérhetőség</h4>
                         <ul class="list-unstyled li-space-lg">
                             <li>
-                                <a class="white" href="#your-link">XY.com</a>
+                                <a class="white">10c-halasi@ipari.vein.hu</a>
                             </li>
                             <li>
-                                <a class="white" href="#your-link">XY.com</a>
-                            </li>
-                            <li class="media">
-                                <a class="white" href="#your-link">CX.hu</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="text-container">
-                        <h4>Partners</h4>
-                        <ul class="list-unstyled li-space-lg">
-                            <li>
-                                <a class="white" href="#your-link">m</a>
+                                <a class="white">10c-milkovics@ipari.vein.hu</a>
                             </li>
                             <li>
-                                <a class="white" href="#your-link">m</a>
-                            </li>
-                            <li>
-                                <a class="white" href="#your-link">x</a>
+                                <a class="white">10c-ivanyi@ipari.vein.hu</a>
                             </li>
                         </ul>
                     </div>
@@ -457,54 +461,12 @@
         </div>
     </div>
 
+    <!--Scroll to the top-->
+    <div class="top-button">
+        <a href="#" class="back-to-top page-scroll"><i class="icon-chevron-up"></i></a>
+    </div>
+
     <!-- Scripts -->
-    <script type="text/javascript">
-        //Javascript -- responsive navigation menu
-        const primaryNav = document.querySelector(".primary-navigation");
-        const navToggle = document.querySelector(".menu-btn");
-
-        navToggle.addEventListener("click", () => {
-            const visibility = primaryNav.getAttribute('data-visible');
-
-            if (visibility === "false") {
-                primaryNav.setAttribute("data-visible", true)
-                navToggle.setAttribute("aria-expanded", true)
-            }
-            else if (visibility === "true") {
-                primaryNav.setAttribute("data-visible", false)
-                navToggle.setAttribute("aria-expanded", false)
-            }
-        })
-
-        //Javascript -- video slider
-        const btns = document.querySelectorAll(".nav-btn");
-        const slides = document.querySelectorAll(".video-slider");
-        const contents = document.querySelectorAll(".content");
-
-        var sliderNav = function (manual) {
-            btns.forEach((btn) => {
-                btn.classList.remove("active");
-            });
-
-            slides.forEach((slide) => {
-                slide.classList.remove("active");
-            });
-
-            contents.forEach((text) => {
-                text.classList.remove("active");
-            });
-
-            btns[manual].classList.add("active");
-            slides[manual].classList.add("active");
-            contents[manual].classList.add("active");
-        }
-        btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-                sliderNav(i)
-            });
-        });
-
-    </script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
