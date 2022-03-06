@@ -134,6 +134,8 @@ header .brand {
   z-index: 1100;
 }
 
+    /* custon icon */
+
 .search .search_icon::before{
   content: '';
   position: absolute;
@@ -143,7 +145,7 @@ header .brand {
   border-radius: 50%;
   transform: translate(-4px, -4px);
 }
-.search .search_icon::after{
+.search .search_icon::after{ 
   content: '';
   position: absolute;
   width: 3px;
@@ -152,6 +154,8 @@ header .brand {
   transform: translate(6px, 6px) rotate(315deg);
 
 }
+
+    /* end - custon icon */
 
 .search .search_input{
   position: relative;
@@ -437,8 +441,22 @@ selection {
   }
 
   .search{
-    display: none;
-    overflow: hidden;
+    display: flex;
+    z-index: 1100;
+    top: 5rem;
+    right: 2rem;
+    position: fixed;
+  }
+
+  .search.active{
+    width: 240px;
+  }
+
+  .search .search_input{
+    position: relative;
+    width: 220px;
+    height: 40px;
+    left: 30px;
   }
 
   .menu-btn {
