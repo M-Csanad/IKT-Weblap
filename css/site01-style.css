@@ -5,3 +5,7 @@
 .content h2{
     color: #e2be00;
 }
+
+.content li {
+    list-style:lower-roman url('../images/List-style_arrow.png') outside;
+}
