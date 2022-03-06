@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Standard webdesing landing page">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="description" content=""">
     <meta name="author" content="IKT-team">
 
     <title>Weblap létrehozás</title>
@@ -16,8 +17,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap&subset=latin-ext"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600&display=swap&subset=latin-ext"
-        rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -27,73 +26,87 @@
     <!-- Favicon  -->
     <link rel="icon" type="image/ico" href="images/favicon.ico">
 </head>
+
 <body data-spy="scroll" data-target=".fixed-top">
 
     <div class="UserCursor"></div>
 
-        <!-- Header -->
-        <header id="header">
+    <!-- Header -->
+    <header id="header">
 
-                <!-- Image Logo -->
-                <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
-                <a href="#" class="brand">WebdesignAlapfokon</a>
-                <div class="menu-btn navbar fixed-top" aria-controls="primary-navigation" aria-expanded="false"></div>
-                <nav>
-                    <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
-                        <li class="active">
-                            <a href="index.html"><span area-hidden="true"></span>KEZDŐLAP</a>
-                        </li>
-                        <li>
-                            <a href="#intro" class="ex-hover page-scroll"><span aria-hidden="true">01</span>BEVEZETŐ</a>
-                        </li>
-                        <li>
-                            <a href="#services" class="ex-hover page-scroll"><span
-                                    aria-hidden="true">02</span>SZOLGÁLTATÁSOK</a>
-                        </li>
-                        <li>
-                            <a href="#projects" class="ex-hover page-scroll"><span aria-hidden="true">03</span>PROJEKTEK</a>
-                        </li>
-                        <li>
-                            <a href="#callMe" class="ex-hover page-scroll"><span aria-hidden="true">04</span>KONTAKT</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.png" alt="alternative"></a>
+        <a href="#" class="brand">WebdesignAlapfokon</a>
+        <div class="menu-btn navbar fixed-top" aria-controls="primary-navigation" aria-expanded="false"></div>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
+                <li class="active">
+                    <a href="index.html"><span area-hidden="true"></span>KEZDŐLAP</a>
+                </li>
+                <li>
+                    <a href="#intro" class="ex-hover page-scroll"><span aria-hidden="true">01</span>BEVEZETŐ</a>
+                </li>
+                <li>
+                    <a href="#services" class="ex-hover page-scroll"><span
+                            aria-hidden="true">02</span>SZOLGÁLTATÁSOK</a>
+                </li>
+                <li>
+                    <a href="#projects" class="ex-hover page-scroll"><span aria-hidden="true">03</span>PROJEKTEK</a>
+                </li>
+                <li>
+                    <a href="#callMe" class="ex-hover page-scroll"><span aria-hidden="true">04</span>KONTAKT</a>
+                </li>
+            </ul>
+        </nav>
 
-        <!-- Slider & Home -->
-        <selection class="home">
-            <video class="video-slider" src="images/slider-vid01.mp4" autoplay loop muted></video>
-            <video class="video-slider" src="images/slider-vid02.mp4" autoplay loop muted></video>
-            <video class="video-slider active" src="images/slider-vid03.mp4" autoplay loop muted></video>
-            <div class="content">
-                <h1>Webdesigner<br><span>feladata</span></h1>
-                <p>A webdesigner tervezi meg az oldal szerkezeti felépítését, arculatát, meghatározza mi, hol és hogyan
-                    helyezkedjen el. Egy jó webdesigner minden területhez ért és átlátja az egyes folyamatokat. További információkért kattints a gombra!</p>
-                <a href="site01-index.html">Olvass Tovább</a>
+        <!-- Search bar -->
+
+        <div class="search">
+            <div class="search_icon"></div>
+            <div class="search_input">
+                <input type="text" placeholder="Search" id="myplaceholder">
             </div>
-            <div class="content">
-                <h1>Tervezés<br><span>Weboldal születik</span></h1>
-                <p>Érdekel hogy kell nekikezdeni egy weboldalnak? Vannak ötleteid, de nem tudod, hogy fogj hozzá? Látogass el hozzám!</p>
-                <a href="site02-index.html">Olvass Tovább</a>
-            </div>
-            <div class="content active">
-                <h1>Weblap<br><span>létrejötte</span></h1>
-                <p>A megbízás teljesítése a megadott határidőn belül,a megbízó folyamatos tájékoztatása és esetleges észrevételeinek figyelembevétele.</p>
-                <a href="site03-index.html">Olvass Tovább</a>
-            </div>
-            <span class="social-icons">
-                <a class="fa-stack">
-                    <a href="https://github.com/M-Csanad/IKT-Weblap">
-                        <i class="fab fa-brands fa-github fa-stack-1x"></i>
-                    </a>
+            <span class="search_cl" onclick="document.getElementById('myplaceholder').value = ''"></span>
+        </div>
+    </header>
+
+    <!-- Slider & Home -->
+    <selection class="home">
+        <video class="video-slider" src="images/slider-vid01.mp4" autoplay loop muted></video>
+        <video class="video-slider" src="images/slider-vid02.mp4" autoplay loop muted></video>
+        <video class="video-slider active" src="images/slider-vid03.mp4" autoplay loop muted></video>
+        <div class="content">
+            <h1>Webdesigner<br><span>feladata</span></h1>
+            <p>A webdesigner tervezi meg az oldal szerkezeti felépítését, arculatát, meghatározza mi, hol és hogyan
+                helyezkedjen el. Egy jó webdesigner minden területhez ért és átlátja az egyes folyamatokat. További
+                információkért kattints a gombra!</p>
+            <a href="site01-index.html">Olvass Tovább</a>
+        </div>
+        <div class="content">
+            <h1>Tervezés<br><span>Weboldal születik</span></h1>
+            <p>Érdekel hogy kell nekikezdeni egy weboldalnak? Vannak ötleteid, de nem tudod, hogy fogj hozzá? Látogass
+                el hozzám!</p>
+            <a href="site02-index.html">Olvass Tovább</a>
+        </div>
+        <div class="content active">
+            <h1>Weblap<br><span>létrejötte</span></h1>
+            <p>A megbízás teljesítése a megadott határidőn belül,a megbízó folyamatos tájékoztatása és esetleges
+                észrevételeinek figyelembevétele.</p>
+            <a href="site03-index.html">Olvass Tovább</a>
+        </div>
+        <span class="social-icons">
+            <a class="fa-stack">
+                <a href="https://github.com/M-Csanad/IKT-Weblap">
+                    <i class="fab fa-brands fa-github fa-stack-1x"></i>
                 </a>
-            </span>
-            <div class="slider-navigate">
-                <div class="nav-btn"></div>
-                <div class="nav-btn"></div>
-                <div class="nav-btn active"></div>
-            </div>
-        </selection>
+            </a>
+        </span>
+        <div class="slider-navigate">
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn active"></div>
+        </div>
+    </selection>
 
     <div class="wrapper">
         <div class="row">
@@ -102,10 +115,12 @@
                     <h2>Weblap létrehozása</h2>
                 </div>
                 <div class="content">
-                    <h4>A megbízás teljesítése a megadott határidőn belül,a megbízó folyamatos tájékoztatása és esetleges észrevételeinek figyelembevétele.</h4>
+                    <h4>A megbízás teljesítése a megadott határidőn belül,a megbízó folyamatos tájékoztatása és
+                        esetleges észrevételeinek figyelembevétele.</h4>
                 </div>
                 <div class="content">
-                    <p>Most azt nézzük meg,hogy milyen fontosabb elemek lehetnek egy html fájlon belül. A fokozatos tanulás során egyre többet ismerhet meg az ember,de most csak a legfontosabbakat nézzük meg.</p>
+                    <p>Most azt nézzük meg,hogy milyen fontosabb elemek lehetnek egy html fájlon belül. A fokozatos
+                        tanulás során egyre többet ismerhet meg az ember,de most csak a legfontosabbakat nézzük meg.</p>
                 </div>
                 <div class="content">
                     <h2>Fontosabb HTML elemek:</h2>
@@ -120,164 +135,136 @@
                         <li>Gomb</li>
                         <li>Osztálykijelölő</li>
                     </ul>
-                    <p>Amint már említettem, ezeket az elemeket fokozatosan sajátítja el az ember.Ezért most nem kell kétségbe esnetek, mert esetleg nem értitek. Léteznek olyan online kurzusok, melyek minden szükséges ismeretet érthetően elmagyaráznak,ezen oldalak többsége angol nyelven fut, hiszen a programozás nyelve az angol. Ezekre találhattok példákat lejjebb görgetve az oldalon.</p>
+                    <p>Amint már említettem, ezeket az elemeket fokozatosan sajátítja el az ember.Ezért most nem kell
+                        kétségbe esnetek, mert esetleg nem értitek. Léteznek olyan online kurzusok, melyek minden
+                        szükséges ismeretet érthetően elmagyaráznak,ezen oldalak többsége angol nyelven fut, hiszen a
+                        programozás nyelve az angol. Ezekre találhattok példákat lejjebb görgetve az oldalon.</p>
                 </div>
                 <div class="content">
                     <h2>Stílus elemek beállítása</h2>
-                    <p>Az előbb felsorolt elemekhez különböző stíluselemek tartozhatnak,ezeket három módon tudjuk beállítani. Az egyik módszer az,hogy magán a létrehozott html kódon belül, a head részben egy külön "style tag" alatt adjuk hozzá a tulajdonságokat. A másik módszer az,hogy az adott elemhez különböző attribútumok segítségével adjuk hozzá a tulajdonságokat. A harmadik módszer pedig az,hogy egy külön fájlban adjuk hozzá őket. Ilyen például egy külön "css fájl". Még ezen kívül használhatunk úgynevezett "Bootstrap keretrendszert",mely a "css programnyelvhez" tartozik.</p>
+                    <p>Az előbb felsorolt elemekhez különböző stíluselemek tartozhatnak,ezeket három módon tudjuk
+                        beállítani. Az egyik módszer az,hogy magán a létrehozott html kódon belül, a head részben egy
+                        külön "style tag" alatt adjuk hozzá a tulajdonságokat. A másik módszer az,hogy az adott elemhez
+                        különböző attribútumok segítségével adjuk hozzá a tulajdonságokat. A harmadik módszer pedig
+                        az,hogy egy külön fájlban adjuk hozzá őket. Ilyen például egy külön "css fájl". Még ezen kívül
+                        használhatunk úgynevezett "Bootstrap keretrendszert",mely a "css programnyelvhez" tartozik.</p>
                 </div>
                 <div class="content">
                     <h2>Néhány példa a stíluselemekre:</h2>
                     <ul>
                         <li>Háttérhez tartozók: annak színe,képe,poziciója,mérete</li>
-                        <li>Szövegformázáshoz tartozók: a szöveg kerete és annak tulajdonságai,színe,betűtípusa,mérete,helye</li>
+                        <li>Szövegformázáshoz tartozók: a szöveg kerete és annak
+                            tulajdonságai,színe,betűtípusa,mérete,helye</li>
                         <li>A további html elemek módosítására szolgálók: színe,mérete,poziciója</li>
                     </ul>
                 </div>
                 <div class="content">
-                    <p>Ahhoz,hogy megtudjuk különböztetni egymástól a html elemkhez tartozó tulajdonságokat,melyeket beállítottunk,kijelölőket kell használnunk:<i>"div","class","id"</i></p>
+                    <p>Ahhoz,hogy megtudjuk különböztetni egymástól a html elemkhez tartozó tulajdonságokat,melyeket
+                        beállítottunk,kijelölőket kell használnunk:<i>"div","class","id"</i></p>
                 </div>
                 <div class="content">
                     <h2>Néhány szó a JavaScript programnyelvról</h2>
-                    <p>A JavaScript segítségével olyan kisebb programokat tudsz beilleszteni a weboldalba, amivel majd később befolyásolhatod annak kinézetét.</p>
+                    <p>A JavaScript segítségével olyan kisebb programokat tudsz beilleszteni a weboldalba, amivel majd
+                        később befolyásolhatod annak kinézetét.</p>
                 </div>
                 <div class="content">
-                    <h4>Ezeken a linkeken olyan kurzusokat találhattok, melyek segítenek elsajátítani az adott programnyelvet:</h4>
+                    <h4>Ezeken a linkeken olyan kurzusokat találhattok, melyek segítenek elsajátítani az adott
+                        programnyelvet:</h4>
                     <p>A linkek küzöl kettő ingyenes, az Educate és a Codeacademy, a Codeberry pedig fizetős.</p>
-                    <a class="link" href="https://codeberryschool.com/hu/" >Codeberry</a>
-                    <a class="link" href="https://www.educative.io/" >Educate</a>
-                    <a class="link" href="https://www.codecademy.com" >Codeacademy</a>
+                    <a class="link" href="https://codeberryschool.com/hu/">Codeberry</a>
+                    <a class="link" href="https://www.educative.io/">Educate</a>
+                    <a class="link" href="https://www.codecademy.com">Codeacademy</a>
                 </div>
                 <div class="content">
                     <h4>Ez egy olyan oldal, amely segítséget nyújthat, ha elakadasz a programozás során</h4>
-                    <a class="link" href="https://www.w3schools.com/" >W3schools</a>
-                </div>
+                    <a class="link" href="https://www.w3schools.com/">W3schools</a>
                 </div>
             </div>
-         </div>
+        </div>
+    </div>
     </div>
 
     <!-- Footer -->
     <footer id="callMe" style="background: #1d1d1d">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="text-container about">
-                            <h4>Néhány szó az oldalról</h4>
-                            <p class="white">A weboldal tanítói céllal jött létre. Általunk felépítheted alaptudásod pilléreit a webfejlesztéssel kapcsolatban.<br>A lépéseket három részre bontva tekintheted meg oldalunkon.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="text-container">
-                            <h4>Egyéb</h4>
-                            <ul class="list-unstyled li-space-lg white">
-                                <li>
-                                    <a class="white">!  Rólunk</a>
-                                </li>
-                                <li>
-                                    <a class="white">!  Privacy Policy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="text-container">
-                            <h4>Linkek</h4>
-                            <ul class="list-unstyled li-space-lg">
-                                <li>
-                                    <a class="white" href="https://www.pexels.com/" target="_blank">Pexels</a>
-                                </li>
-                                <li>
-                                    <a class="white" href="https://www.youtube.com/" target="_blank">YouTube</a>
-                                </li>
-                                <li>
-                                    <a class="white" href="https://unsplash.com/" target="_blank">Unsplash</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="text-container">
-                            <h4>Elérhetőség</h4>
-                            <ul class="list-unstyled li-space-lg">
-                                <li>
-                                    <a class="white">10c-halasi@ipari.vein.hu</a>
-                                </li>
-                                <li>
-                                    <a class="white">10c-milkovics@ipari.vein.hu</a>
-                                </li>
-                                <li>
-                                    <a class="white">10c-ivanyi@ipari.vein.hu</a>
-                                </li>
-                            </ul>
-                        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="text-container about">
+                        <h4>Néhány szó az oldalról</h4>
+                        <p class="white">A weboldal tanítói céllal jött létre. Általunk felépítheted alaptudásod
+                            pilléreit a webfejlesztéssel kapcsolatban.<br>A lépéseket három részre bontva tekintheted
+                            meg oldalunkon.</p>
                     </div>
                 </div>
-            </div>
-        </footer>
-    
-        <!-- Copyright -->
-        <div class="copyright" style="background: #1d1d1d">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="p-small">2022 WebdesignAlapfokon</p>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Egyéb</h4>
+                        <ul class="list-unstyled li-space-lg white">
+                            <li>
+                                <a class="white">! Rólunk</a>
+                            </li>
+                            <li>
+                                <a class="white">! Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="text-container">
+                        <h4>Linkek</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white" href="https://www.pexels.com/" target="_blank">Pexels</a>
+                            </li>
+                            <li>
+                                <a class="white" href="https://www.youtube.com/" target="_blank">YouTube</a>
+                            </li>
+                            <li>
+                                <a class="white" href="https://unsplash.com/" target="_blank">Unsplash</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-container">
+                        <h4>Elérhetőség</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li>
+                                <a class="white">10c-halasi@ipari.vein.hu</a>
+                            </li>
+                            <li>
+                                <a class="white">10c-milkovics@ipari.vein.hu</a>
+                            </li>
+                            <li>
+                                <a class="white">10c-ivanyi@ipari.vein.hu</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
+    </footer>
 
-    <!-- Scripts -->
-    <script type="text/javascript">
-        //Javascript -- responsive navigation menu
-        const primaryNav = document.querySelector(".primary-navigation");
-        const navToggle = document.querySelector(".menu-btn");
+    <!-- Copyright -->
+    <div class="copyright" style="background: #1d1d1d">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">2022 WebdesignAlapfokon</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        navToggle.addEventListener("click", () => {
-            const visibility = primaryNav.getAttribute('data-visible');
+    <!--Scroll to the top-->
+    <div class="top-button">
+        <a href="#" class="back-to-top page-scroll"><i class="icon-chevron-up"></i></a>
+    </div>
 
-            if (visibility === "false") {
-                primaryNav.setAttribute("data-visible", true)
-                navToggle.setAttribute("aria-expanded", true)
-            }
-            else if (visibility === "true") {
-                primaryNav.setAttribute("data-visible", false)
-                navToggle.setAttribute("aria-expanded", false)
-            }
-        })
-
-        //Javascript -- video slider
-        const btns = document.querySelectorAll(".nav-btn");
-        const slides = document.querySelectorAll(".video-slider");
-        const contents = document.querySelectorAll(".content");
-
-        var sliderNav = function (manual) {
-            btns.forEach((btn) => {
-                btn.classList.remove("active");
-            });
-
-            slides.forEach((slide) => {
-                slide.classList.remove("active");
-            });
-
-            contents.forEach((text) => {
-                text.classList.remove("active");
-            });
-
-            btns[manual].classList.add("active");
-            slides[manual].classList.add("active");
-            contents[manual].classList.add("active");
-        }
-        btns.forEach((btn, i) => {
-            btn.addEventListener("click", () => {
-                sliderNav(i)
-            });
-        });
-
-    </script>
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="js/UserCursor.js"></script> <!-- Custom cursor -->
 </body>
+
 </html>
