@@ -102,11 +102,11 @@
 }
 
 #work .under-img .under-img-left{
-  float: inline-start;
+  float: left;
   letter-spacing: .8px;
 }
 #work .under-img .under-img-right{
-  float:  inline-end;
+  float: right;
   letter-spacing: 5px;
 }
 
